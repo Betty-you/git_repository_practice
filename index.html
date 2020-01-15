@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hello, World</title>
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+
+        #container {
+            height: 100%
+        }
+    </style>
+    <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=FJ4BZ-ROE6G-EXDQX-ICZCP-UGH7V-KVFEO"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script type="text/javascript">
+        function init() {
+            var map = new qq.maps.Map(document.getElementById("container"), {
+                // 地图的中心地理坐标。
+                center: new qq.maps.LatLng(39.916527, 116.397128)
+            });
+        }
+        init()
+
+    </script>
+</body>
+
+</html>
